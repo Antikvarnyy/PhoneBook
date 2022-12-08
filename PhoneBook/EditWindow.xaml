@@ -1,0 +1,26 @@
+﻿<Window x:Class="PhoneBook.EditWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:PhoneBook"
+        mc:Ignorable="d"
+        Title="EditWindow" Height="220" Width="300">
+    <Grid Background="#222222">
+        <StackPanel Loaded="LoadWindow">
+            <Label Content="Edit" Foreground="Coral" FontFamily="Bahnschrift Condensed" HorizontalAlignment="Center" FontSize="28"></Label>
+            <Label Content="Edit contact`s name:" Foreground="Coral" FontFamily="Bahnschrift Condensed" HorizontalAlignment="Left" FontSize="13"></Label>
+            <Border Margin="5,0,5,0" Background="White" CornerRadius="10" Width="240">
+                <TextBox  Width="220" x:Name="NameBox" BorderBrush="White"></TextBox>
+            </Border>
+            <Label Content="Edit contact`s number:" Foreground="Coral" FontFamily="Bahnschrift Condensed" HorizontalAlignment="Left" FontSize="13"></Label>
+            <Border Margin="5,0,5,0" Background="White" CornerRadius="10" Width="240">
+                <TextBox  Width="220" x:Name="NumBox" BorderBrush="White"></TextBox>
+            </Border>
+            <StackPanel Margin="0,10,0,10" Orientation="Horizontal">
+                <Button x:Name="EditButton" Margin="15,0,0,0" FontFamily="Bahnschrift Condensed" Content="Save"  Height="25" Width="100" Click="SaveClick"></Button>
+                <Button x:Name="ExitButton" Margin="20,0,0,0" FontFamily="Bahnschrift Condensed" Content="Cancel"  Height="25" Width="100" Click="CloseClick"></Button>
+            </StackPanel>
+        </StackPanel>
+    </Grid>
+</Window>
